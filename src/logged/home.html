@@ -31,7 +31,9 @@
             <!-- User action Btn -->
             <div>
               <button class="btn btn-lg" id="open-add-money">Add Money</button>
-              <button class="btn btn-lg">Cash Out</button>
+              <button class="btn btn-lg" id="open-cash-out-money">
+                Cash Out
+              </button>
             </div>
             <div class="divider"></div>
             <!-- Add money -->
@@ -68,6 +70,44 @@
                 <div class="form-control mt-6">
                   <button class="btn btn-primary" id="add-money">
                     Add Money
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Cash out -->
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
+              id="cash-out-money-form"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    id="money-amount"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    id="pin-number"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="cash-out-money">
+                    Cash out
                   </button>
                 </div>
               </form>
