@@ -17,7 +17,7 @@
       <div class="mockup-phone">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-1 overflow-y-auto">
+          <div class="artboard artboard-demo phone-3 overflow-y-auto">
             <div class="flex justify-between items-center mt-5">
               <div class="stats shadow">
                 <div class="stat">
@@ -29,10 +29,13 @@
             </div>
             <div class="divider"></div>
             <!-- User action Btn -->
-            <div>
+            <div class="grid grid-cols-2 justify-center items-center gap-2">
               <button class="btn btn-lg" id="open-add-money">Add Money</button>
               <button class="btn btn-lg" id="open-cash-out-money">
                 Cash Out
+              </button>
+              <button class="btn btn-lg" id="open-transaction">
+                Transaction
               </button>
             </div>
             <div class="divider"></div>
@@ -112,10 +115,17 @@
                 </div>
               </form>
             </div>
+            <!-- Transaction start -->
+            <div id="transection-section" class="hidden">
+              <h2 class="text-4xl">Transaction History</h2>
+            </div>
+            <!-- Transaction End -->
           </div>
         </div>
       </div>
     </main>
+    <script src="../js/utlities.js"></script>
     <script src="../js/home.js"></script>
+    <script src="../js/features.js"></script>
   </body>
 </html>
